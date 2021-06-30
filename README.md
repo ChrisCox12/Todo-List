@@ -3,7 +3,7 @@ A simple To-do List application
 
 MERN stack
 
-MySQL
+MongoDB
 Express.js
 React.js
 Node.js
