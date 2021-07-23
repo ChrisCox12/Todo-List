@@ -21,7 +21,7 @@ const tasksRoute = require('./routes/task');
 
 
 // use imported routes
-app.use('/tasks', tasksRoute);
+app.use('/api/tasks', tasksRoute);
 
 
 // default landing page
