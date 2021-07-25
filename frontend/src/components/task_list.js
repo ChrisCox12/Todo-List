@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import TASK_LIST_ITEM from './task_list_item';
 
 
 function Task_list() {
@@ -16,8 +16,16 @@ function Task_list() {
 
         fetchData();
     }, []);
-
-    return (
+    
+    return(
+      <div>
+        <ul>
+            <TASK_LIST_ITEM task={data[0]} />
+            <TASK_LIST_ITEM task={data[1]} />
+        </ul>
+      </div>
+    )
+    /* return (
         <div>
           <ul>
             {data.map(item => (
@@ -27,7 +35,7 @@ function Task_list() {
             ))}
           </ul>
         </div>
-    )
+    ) */
 }
 
 export default Task_list
