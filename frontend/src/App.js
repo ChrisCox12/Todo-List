@@ -5,7 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './components/home';
 import Task_list from './components/task_list';
 import CustNavbar from './components/navbar';
-import New_task_form from './components/new_task_form';
+import NEW_TASK_FORM from './components/new_task_form';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/task-list' component={Task_list} />
-          <Route path='/create-task' component={New_task_form} />
+          <Route path='/create-task' component={NEW_TASK_FORM} />
         </Switch>
       </BrowserRouter>
     </div>
